@@ -1,0 +1,134 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+      color: #f5f6f7;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+      font-size: 18px;
+  
+    background-image:url('anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg');
+    background-color: #000000;
+    
+      
+    background-size: 100%;
+    background-repeat:repeat-y;
+  
+  }
+  
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+      padding: 2rem 0;
+  }
+  
+  fieldset:not(:last-of-type) {
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  label {
+    display: block;
+      margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+      width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #9a2252;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  a {
+    color: #dfdfe2;
+  }
+  
+  body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      /*background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);*/
+      background: linear-gradient(to bottom,hsla(336, 74%, 82%, 0.566),hsla(336, 69%, 53%, 0.566),hsla(336, 100%, 25%, 0.566),hsla(338, 89%, 49%, 0.559),hsla(342, 100%, 5%, 0.505));
+  }
+  
+  .Header_styling{
+    background-color:hwb(341 0% 90% / 0.571);
+    width:100%;
+    height: 13%;
+    font-size: 50px;
+    font-family: Tahoma;
+  }
+  
+  th{
+    font-weight:bold;
+    color: #f5f6f7;
+
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: var(--secondary-color);
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  :root {
+    --secondary-color: #48c9c9;
+    --contrast-color: #BF307F;
+}
+
+.view_table_buttons_colorcode{
+    background-color: var(--contrast-color);
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+<meta charset='UTF-8'>
+<title>CodePen Demo</title>
+
+<meta name="robots" content="noindex">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<link rel="canonical" href="https://codepen.io/seyedi/pen/zYoeLEv">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swapps://github.com/produle/MockFlowFont/blob/master/MockFlowFont1/dist/MockFlowFont1.woff">
+<link rel="stylesheet" href="https://assets.css-tricks.ir/font/font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style class="INLINE_PEN_STYLESHEET_ID">
+:root {
+--surface-color: #fff;
+--curve: 40;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Noto Sans JP', sans-serif;
+background-color: #fef8f8;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin: 4rem 5vw;
+padding: 0;
+list-style-type: none;
+}
+
+.card {
+position: relative;
+display: block;
+height: 100%;
+border-radius: calc(var(--curve) * 1px);
+overflow: hidden;
+text-decoration: none;
+}
+
+.card__image {
+width: 100%;
+height: auto;
+}
+
+.card__overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 1;
+border-radius: calc(var(--curve) * 1px);
+background-color: var(--surface-color);
+transform: translateY(100%);
+transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+transform: translateY(0);
+}
+
+.card__header {
+position: relative;
+display: flex;
+align-items: center;
+gap: 2em;
+padding: 2em;
+border-radius: calc(var(--curve) * 1px) 0 0 0;
+background-color: var(--surface-color);
+transform: translateY(-100%);
+transition: .2s ease-in-out;
+}
+
+.card__arc {
+width: 80px;
+height: 80px;
+position: absolute;
+bottom: 100%;
+right: 0;
+z-index: 1;
+}
+
+.card__arc path {
+fill: var(--surface-color);
+d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+transform: translateY(0);
+}
+
+.card__thumb {
+flex-shrink: 0;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+.card__title {
+font-size: 1em;
+margin: 0 0 .3em;
+color: #6A515E;
+}
+
+.card__tagline {
+display: block;
+margin: 1em 0;
+font-family: "MockFlowFont";
+font-size: .8em;
+color: #D7BDCA;
+}
+
+.card__status {
+font-size: .8em;
+color: #D7BDCA;
+}
+
+.card__description {
+padding: 0 2em 2em;
+margin: 0;
+/* color: #D7BDCA;
+font-family: "MockFlowFont";
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3; */
+overflow: hidden;
+}
+
+</style>
+
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+<ul class="cards">
+<!--Product 1 -->
+<li>
+<a href="" class="card">
+<img src="https://www.harpersbazaararabia.com/cloud/2021/09/30/Featured-Image-3.png" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header">
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+<img class="card__thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6GC23XZ0vBCTTG6q0PDQEhAKEN9Emz3ayww2U-AVcRTcLAUPPdNyMQtyojdtnxNF1yo&usqp=CAU" alt="" />
+<div class="card__header-text">
+<h3 class="card__title">Cosmetics</h3>
+<span class="card__status">1 hour ago</span>
+</div>
+</div>
+<p class="card__description">Fenty Beauty, Bobbi Brown, M.A.C,etc.</p>
+</div>
+</a>
+</li>
+<!--Product 2 -->
+<li>
+<a href="" class="card">
+<img src="https://www.fragrancereview.com/php_assets/uploads/2022/01/Best-Elizabeth-Arden-Perfume.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header">
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+<img class="card__thumb" src="https://cdn.dribbble.com/users/427368/screenshots/13226287/media/0728b9f4be8de7b3ccaaa5b3680d94d5.jpg?compress=1&resize=400x300" alt="" />
+<div class="card__header-text">
+<h3 class="card__title">Fragrances</h3>
+<span class="card__status">3 hours ago</span>
+</div>
+</div>
+<p class="card__description">Elizabeth Arden, Dior, Elizabeth Taylor, Versace,etc.</p>
+</div>
+</a>
+</li>
+<!--Product 3 -->
+<li>
+<a href="" class="card">
+<img src="https://www.brandfield.com/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/5/5/5517800_ms1.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header">
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+<img class="card__thumb" src="https://previews.123rf.com/images/oldoolf/oldoolf1804/oldoolf180401821/100454993-wrist-watches-icon.jpg" alt="" />
+<div class="card__header-text">
+<h3 class="card__title">Watches</h3>
+<!-- <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span> -->
+<span class="card__status">1 hour ago</span>
+</div>
+</div>
+<p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+</div>
+</a>
+</li>
+<!-- Product 4 -->
+<li>
+<a href="" class="card">
+<img src="https://assets.ajio.com/medias/sys_master/root/h9a/h33/11075985178654/-1117Wx1400H-450112013-gold-MODEL.jpg" class="card__image" alt="" />
+<div class="card__overlay">
+<div class="card__header">
+<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+<img class="card__thumb" src="https://icons.iconarchive.com/icons/chanut/women-shoes/1024/Wedge-sneaker-icon.png" alt="" />
+<div class="card__header-text">
+<h3 class="card__title">Shoes</h3>
+<span class="card__status">3 hours ago</span>
+</div>
+</div>
+<p class="card__description">Skechers, Catwalk,etc.</p>
+</div>
+</a>
+</li>
+</ul>
+
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-4da9a77e-d7f1-a246-21bc-8881374a02d0" crossorigin></script>
+</body>
+
+</html>
