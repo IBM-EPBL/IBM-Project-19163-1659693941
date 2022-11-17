@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="favicon.ico" type="icon">
+        <title>ABOUT US</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: monospace;
+    display: grid;
+    
+    align-content: center;
+    min-height: 100vh;
+    background-color: #fef8f8;
+  background-image:url('anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg');
+}
+
+
+body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      /*background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);*/
+      background: linear-gradient(to bottom,hsla(336, 74%, 82%, 0.566),hsla(336, 69%, 53%, 0.566),hsla(336, 100%, 25%, 0.566),hsla(338, 89%, 49%, 0.559),hsla(342, 100%, 5%, 0.505));
+
+  }
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 75vw;
+    margin: 0 auto;
+    box-shadow:transparent;
+    border-radius: 12px
+}
+.image{
+    background-color: #48c9c9;
+    display: flex;
+    border-radius: 12px 0 0 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+
+}
+.image img{
+height:50vh;
+margin:50px auto
+}
+.content{
+    background-color:#48c9c9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0  12px 12px 0;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:hwb(341 0% 90% / 0.571);
+    color: #ffffff;
+
+}
+
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color:#ffffff
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 2px solid #4158D0;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #C850C0;
+}
+ 
+.vertical-line{
+    height: 30px;
+    width: 3px;
+    background: #C850C0;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: #C850C0;
+    cursor: pointer;
+}
+ 
+/*****************/
+ 
+@media(max-width: 900px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+
+    }
+    .image{
+        height: 100vh;
+        border-radius: none;
+    }
+    .content{
+        height: 100vh;
+        border-radius: none;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+.credit{
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .credit a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+  } 
+
+  .nav {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        line-height: 50px;
+        position: sticky;
+        position: -webkit-sticky;
+        margin-top: -13px;
+      }
+
+      nav ul {
+        /* float: right;
+    margin-right: 30px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+  
+      nav ul li {
+        list-style-type: none;
+        /* display: inline-block; */
+        transition: 0.7s all;
+        font-size: large;
+      }
+  
+      nav ul li:hover {
+        background-color: #088;
+      }
+  
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+      }
+  
+      ul li ul {
+        background-color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        /* margin-top: 1rem; */
+        /* left: 0; */
+        display: none;
+      }
+  
+      ul li:hover>ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+  
+      ul li ul li {
+        padding: 5px;
+        clear: both;
+        width: 100%;
+      }
+
+      .new_style{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+      }
+
+
+  </style>
+    </head>
+
+    <body>
+
+        <div class="nav">
+            <nav>
+        
+                <ul class="new_style"> 
+                <li> <a href="login_form.html">LOGIN🟣</a></li>
+                <li><a href="registration_form.html">REGISTER🟣</a></li>
+                <li><a href="services.html">SERVICES🟣</a></li>
+                <li><a href="about_us.html">ABOUT🟣</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <section>
+            <div class = "image">
+               <img src="inventory-grow.gif" style="border-radius: 25px;">
+            </div>
+ 
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>  OUR SOFTWARE :<br> <br> Manages inventory tracking system to record deliveries, shipments and stock levels. <br> Evaluates deliveries, shipments and product levels to improve inventory control procedures. <br> Analyzes daily product and supply levels to anticipate inventory problems and shortages. </p>
+                <ul class = "links">
+                    <li><a href = "#">Customer Satisfaction</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">Cost Effective Storage</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">Stock Maintenance</a></li>
+                </ul>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </section><br><br>
+    </body>
+</html>
