@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="icon">
+    <style>
+      body {
+  
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+  
+      }
+ 
+      .nav {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        line-height: 50px;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+  
+      nav ul {
+        /* float: right;
+    margin-right: 30px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+  
+      nav ul li {
+        list-style-type: none;
+        /* display: inline-block; */
+        transition: 0.7s all;
+        font-size: large;
+      }
+  
+      nav ul li:hover {
+        background-color: #088;
+      }
+  
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+      }
+  
+      ul li ul {
+        background-color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        /* margin-top: 1rem; */
+        /* left: 0; */
+        display: none;
+      }
+  
+      ul li:hover>ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+  
+      ul li ul li {
+        padding: 5px;
+        clear: both;
+        width: 100%;
+      }
+  
+      
+    </style>
+
+
+
+    <title>Registration Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+  <body>
+    <h1 class="Header_styling" style="color:white">Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+
+    <div class="container">
+
+
+
+      <!--blue background part-->
+      <div class= "containerb">
+        <div class="container_content">
+        <div class="container_content_inner">
+        <div class="title">
+          <h1 style="margin-top: 70px; margin-bottom: 2px;">Register</h1>
+        </div>
+        <div class="par">
+          <form action="" method="POST">
+            <fieldset>
+              <label>Enter Your Email: 
+              <input type="email" name="email" required /></label>
+              <label>Create a New Password: 
+              <input type="password" name="password"  required /></label>
+              <label>Enter Your Phone Number:
+               <input type="number" name="phone"  /></label>
+            </fieldset>
+      
+            <fieldset>
+              <label>You are using our site as a: </label>
+              <label>
+              <input type="radio" name="role" value="Retailer" class="inline" /> Retailer </label>
+              <label>
+              <input type="radio" name="role" value="Customer"class="inline" /> Customer </label>
+              <label>
+                <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="terms" style="color:#3d240c ;">terms and conditions💠</a>
+              </label>
+            </fieldset>
+            
+            <input type="submit" value="Submit" />
+          </form>
+          {{msg}}
+        </div>
+          
+        </div>
+        </div>
+
+         <div class="container_outer_img">
+                <div class="img-inner">
+                <img src="image.png"  alt="" class="container_img""/>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+
+
+    </div>
+
+
+
+
+
+    
+  </body>
+</html>
+

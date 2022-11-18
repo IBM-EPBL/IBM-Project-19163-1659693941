@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <link rel="icon" href="favicon.ico" type="icon">
+  <title>OUR PRODUCTS</title>
+
+  <meta name="robots" content="noindex">
+<!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/seyedi/pen/zYoeLEv">
+
+   -->
+  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swapps://github.com/produle/MockFlowFont/blob/master/MockFlowFont1/dist/MockFlowFont1.woff">
+<link rel="stylesheet" href="https://assets.css-tricks.ir/font/font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    :root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+  background-image:url('anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      /*background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);*/
+      background: linear-gradient(to bottom,hsla(336, 74%, 82%, 0.566),hsla(336, 69%, 53%, 0.566),hsla(336, 100%, 25%, 0.566),hsla(338, 89%, 49%, 0.559),hsla(342, 100%, 5%, 0.505));
+
+  }
+
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: 100%;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}      
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em;
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+/*   color: #D7BDCA;
+  font-family: "MockFlowFont";  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; */
+  overflow: hidden;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+.button2 {
+  background-image: linear-gradient(to right top, #d16ba5, #ba83ca, #79b3f4, #41dfff);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.button2:hover{
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.Header_styling{
+  background-color:hwb(341 0% 90% / 0.571);
+  width:100%;
+  height: 12%;
+  margin-top: 0px;
+  font-size: 50px;
+  font-family: Tahoma;
+}
+    
+nav {
+          width: 100%;
+          height: 50px;
+          background-color: black;
+          line-height: 50px;
+          position: sticky;
+          position: -webkit-sticky;
+          margin-top: -15px;
+        }
+    
+        nav ul {
+          /* float: right;
+      margin-right: 30px; */
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+    
+        nav ul li {
+          list-style-type: none;
+          /* display: inline-block; */
+          transition: 0.7s all;
+          font-size: large;
+        }
+    
+        nav ul li:hover {
+          background-color: #48c9c9;
+        }
+    
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 30px;
+        }
+    
+        ul li ul {
+          background-color: black;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          /* margin-top: 1rem; */
+          /* left: 0; */
+          display: none;
+        }
+    
+        ul li:hover>ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+    
+        ul li ul li {
+          padding: 5px;
+          clear: both;
+          width: 100%;
+        }
+    
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  <!-- <div class="nav"> -->
+    <nav>
+
+        <ul>
+        <li> <a href="login">LOGIN🟣</a></li>
+        <li><a href="register">REGISTER🟣</a></li>
+        <li><a href="services">SERVICES🟣</a></li>
+        <li><a href="aboutus">ABOUT🟣</a></li>
+        </ul>
+    </nav>
+<!-- </div> -->
+  <h1 class="Header_styling" style="color:white;text-align: center;">PRODUCTS</h1>
+  <ul class="cards">
+
+  <!--Product 1 -->
+  <li>
+    <a href="place_order?id=102&name=Lakme_liquid_concealer&cost=400" class="card" onclick='parent.location.href="place_order?id=101&name=Cosmic_rock&cost=16730"'>
+      <img src="Cosmetics.png" class="card__image" alt="Cosmetics Image" />
+      <!-- <img src="https://www.harpersbazaararabia.com/cloud/2021/09/30/Featured-Image-3.png" class="card__image" alt="Cosmetics Image" /> -->
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                    
+          <img class="card__thumb" src="Cosmetics_thumb.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Cosmetics</h3>            
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">Fenty Beauty, Bobbi Brown, M.A.C,etc.</p>
+        
+        <!-- <a href="place_orderplace_order"><button type="button" class="btn btn-dark">BUY NOW</button></a> -->
+      </div>
+    </a>      
+  </li>
+
+ 
+ <!--Product 2 -->
+  <li>
+    <a href="place_order?id=10&name=Blanc_body_perfume&cost=265" class="card">
+      <img src="Fragrances.png" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                
+          <img class="card__thumb" src="Fragrances_thumb.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Fragrances</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">Elizabeth Arden, Dior, Elizabeth Taylor, Versace,etc.</p>
+        <!-- <a href="place_orderplace_order"><button type="button" class="btn btn-dark">BUY NOW</button></a> -->
+      </div>
+    </a>
+  </li>
+ 
+<!--Product 3 -->
+  <li>
+    <a href="place_order?id=101&name=Cosmic_rock&cost=16730" class="card">
+      <img src="Watches.png" class="card__image" alt="Watches" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                    
+          <img class="card__thumb" src="Watch_thumb.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Watches</h3>
+<!--             <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>             -->
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">Swarovski, Seiko, Casio, Calvin Klein, etc. </p>
+        <!-- <a href="place_orderplace_order"><button type="button" class="btn btn-dark">BUY NOW</button></a> -->
+      </div>
+    </a>
+  </li>
+
+ 
+<!--   Product 4 -->
+  <li>
+    <a href="place_order" class="card">
+      <img src="Shoes.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                
+          <img class="card__thumb" src="Shoes_thumb.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Shoes</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>          
+        </div>
+        <p class="card__description">Skechers, Catwalk,etc.</p>
+        <!-- <div class="grid-item">
+          <a href="place_order"><button class="button2" onClick='parent.location.href="place_order?id=101&name=Cosmic_rock&cost=16730"'>
+              Buy Now
+          </button></a>
+        </div>   -->
+        <!-- <a href="place_orderplace_order"><button type="button" class="btn btn-dark">BUY NOW</button></a>-->
+      </div>
+    </a>
+  </li>    
+</ul>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+  <script  src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-4da9a77e-d7f1-a246-21bc-8881374a02d0" crossorigin></script>
+</body>
+
+</html>
