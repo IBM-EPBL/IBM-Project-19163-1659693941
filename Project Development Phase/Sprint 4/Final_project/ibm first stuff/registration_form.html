@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <title>Registration Form</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/C:/Users/Bhuvaneswari/Desktop/CAD/Final_project/templates/styles.css') }}" />-->
+  <!--<link rel="stylesheet" href="https://s3.jp-tok.cloud-object-storage.appdomain.cloud/my.invbucket1/styles.css"/> -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <h1 class="Header_styling" style="color:white">Registration Form</h1>
+  <p>Please fill out this form with the required information</p>
+
+  <div class="container">
+
+
+
+    <!--blue background part-->
+    <div class='container'>
+      <div class="container_content">
+        <div class="container_content_inner">
+          <div class="title">
+            <h1 style="margin-top: 70px; margin-bottom: 2px;">Register</h1>
+          </div>
+          <div class="par">
+            <form action="registration_form.html" method="POST">
+              <fieldset>
+                <label>Enter Your Email: <input type="email" name="email" required /></label>
+                <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}"
+                    required /></label>
+                <label>Enter Your Phone Number: <input type="number" name="phonenum" min="13" max="120" /></label>
+              </fieldset>
+
+              <fieldset>
+                <label>You would like to use our site as a: </label>
+                <label><input type="radio" name="role" class="inline" /> Retailer </label>
+                <label><input type="radio" name="role" class="inline" /> Customer </label>
+                <label>
+                  <input type="checkbox" name="terms" class="inline" required /> I accept the <a
+                    href="terms_and_conditions_page.html" style="color:turquoise ;">terms and conditions💠</a>
+                </label>
+              </fieldset>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container_outer_img">
+      <div class="img-inner">
+        <img src="image.png" alt="" class="container_img""/>
+      <!-- </div>
+     </div>
+    </div> -->
+        <div class=" overlay">
+      <!-- </div> -->
+
+
+</body>
+
+</html>

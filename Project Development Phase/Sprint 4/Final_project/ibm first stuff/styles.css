@@ -1,0 +1,304 @@
+
+      
+.nav {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        line-height: 50px;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+  
+      nav ul {
+        /* float: right;
+    margin-right: 30px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+  
+      nav ul li {
+        list-style-type: none;
+        /* display: inline-block; */
+        transition: 0.7s all;
+        font-size: large;
+      }
+  
+      nav ul li:hover {
+        background-color: #088;
+      }
+  
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+      }
+  
+      ul li ul {
+        background-color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        /* margin-top: 1rem; */
+        /* left: 0; */
+        display: none;
+      }
+  
+      ul li:hover>ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+  
+      ul li ul li {
+        padding: 5px;
+        clear: both;
+        width: 100%;
+      }
+  
+
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+	font-size: 18px;
+
+  /*background-image:url({{url_for('static', filename='anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg')}});*/
+background-image:url('anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg');
+  background-color: #000000;
+  
+    
+  background-size: 100%;
+  background-repeat:repeat-y;
+
+}
+
+
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+ z-index:10px;
+}
+
+fieldset {
+  border: none;
+	padding: 2rem 0;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #9a2252;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	/*background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);*/
+    background: linear-gradient(to bottom,hsla(336, 74%, 82%, 0.566),hsla(336, 69%, 53%, 0.566),hsla(336, 100%, 25%, 0.566),hsla(338, 89%, 49%, 0.559),hsla(342, 100%, 5%, 0.505));
+}
+
+.Header_styling{
+  background-color:hwb(341 0% 90% / 0.571);
+  width:100%;
+  height: 13%;
+  font-size: 50px;
+  font-family: Tahoma;
+}
+
+
+
+
+/*trial part*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 28px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    color:var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

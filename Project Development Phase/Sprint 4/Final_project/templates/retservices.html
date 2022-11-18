@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.ico" type="icon">
+    <title>OUR SERVICES</title>
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+  }
+
+  section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+
+  }
+
+  body{
+    background-image: url("anime_cherry_blossom_scenery_wallpaper_by_chickenman255_df0jnr6-pre_1.jpg");
+  }
+
+  body:before{
+      content:'';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      /*background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);*/
+      background: linear-gradient(to bottom,hsla(336, 74%, 82%, 0.566),hsla(336, 69%, 53%, 0.566),hsla(336, 100%, 25%, 0.566),hsla(338, 89%, 49%, 0.559),hsla(342, 100%, 5%, 0.505));
+
+  }
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #BF307F 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper {
+    background-color: #48c9c9;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #BF307F;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  .section-heading{
+    color: #ffffff;
+    background-color:hwb(341 0% 90% / 0.571);
+    width:100%;
+    height: 20%;
+    font-size: 50px;
+    font-family: Tahoma;
+
+  }
+  .nav {
+          width: 100%;
+          height: 50px;
+          background-color: black;
+          line-height: 50px;
+          position: sticky;
+          position: -webkit-sticky;
+        }
+    
+        nav ul {
+          /* float: right;
+      margin-right: 30px; */
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+    
+        nav ul li {
+          list-style-type: none;
+          /* display: inline-block; */
+          transition: 0.7s all;
+          font-size: large;
+        }
+    
+        nav ul li:hover {
+          background-color: #48c9c9;
+        }
+    
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 30px;
+        }
+    
+        ul li ul {
+          background-color: black;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          /* margin-top: 1rem; */
+          /* left: 0; */
+          display: none;
+        }
+    
+        ul li:hover>ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+    
+        ul li ul li {
+          padding: 5px;
+          clear: both;
+          width: 100%;
+        }
+    
+  
+
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="nav">
+      <nav>
+  
+          <ul>
+          <li> <a href="login">LOGIN🟣</a></li>
+          <li><a href="register">REGISTER🟣</a></li>
+          <li><a href="services">SERVICES🟣</a></li>
+          <li><a href="aboutus">ABOUT🟣</a></li>
+          </ul>
+      </nav>
+  </div>
+    <section>
+      <div class="row">
+        <h2 class="section-heading">OUR SERVICES</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href="orderdisplay"><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="60" height="60" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105602/erp-operations.png" alt="erp operation" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245622" /></span></div></a>
+              <!-- <i class="fas fa-hammer"></i> -->
+            </div>
+            <h3>Manage Order</h3>
+            <p>
+              Create all the purchase orders, sales orders,and all other essential documents you need. Pick, pack, ship, and track orders. Upgrade and customize products. Automatically generate purchase orders and manufacture orders.
+
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href="proddisplay"><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="60" height="60" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105602/easy-stock-rotation-1.png" alt="easy stock rotation" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245623" /></span></div></a>
+              <!-- <i class="fas fa-brush"></i> -->
+            </div>
+            <h3>Manage Products</h3>
+            <p>
+              Manage multiple warehouses, track parts using different criteria , set up auto reorder points to prevent stockout.
+              Our whole process of product management involves: Vision development and Customer understanding
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href="custdisplay"><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="70" height="70" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105603/vendor-management-1.png" alt="vendor management" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245620" /></span></div></a>
+              <!-- <i class="fas fa-wrench"></i> -->
+            </div>
+            <h3>Manage Customer</h3>
+            <p>
+              Managing customer relationships is critical to retention and customer loyalty. 
+              Here we effectively manage customer relationships by providing with best quality services.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href="vendordisplay"><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="60" height="60" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105603/multi-location-sync.png" alt="multi location icon" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245618" /></span></div></a>
+              <!-- <i class="fas fa-truck-pickup"></i> -->
+            </div>
+            <h3>Manage Vendors</h3>
+            <p>
+              Meeting the demands of the dynamic e-commerce industry is easier than ever with our Vendor Panel solution. Activities such as selecting vendors, negotiating contracts, controlling costs, reducing vendor-related risks and ensuring service delivery can be done within the click of a button here.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href=""><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="60" height="60" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105603/multichannel-price-control.png" alt="multichannel price control icon" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245617" /></span></div></a>
+              <!-- <i class="fas fa-broom"></i> 
+            </div>
+            <h3>Manage Inventory</h3>
+            <p>
+              Unnecessary stockouts tend to disturb the flow of the whole supply chain. From distinguishing between good and bad inventory to minimizing the rate of returns, our automated inventory management system is designed for your business needs.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <a href="retdisplay"><div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="70" height="70" src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03105603/sku-bundling.png" alt="level bundling icon" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone wp-image-245615" /></span></div></a>
+              <!-- <i class="fas fa-plug"></i> -->
+            </div>
+            <h3>Manage Retailers</h3>
+            <p>
+              Retail management includes all the steps required to bring the customers into the store and fulfill their buying needs. 
+              Retail management here makes shopping a pleasurable experience and ensures the customers leave the store with a smile
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </body>
+</html>
+
